@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': apiUrl,  // Proxy to the backend API
+      '/api': apiUrl, // Proxy to the backend API
     },
   },
   root: '.',  // Set root directory to the current folder where `index.html` and `vite.config.js` are located

@@ -1,9 +1,9 @@
 # Node
 node_modules/
-build/
+frontend/build/
 
 # Java
-target/
+backend/target/
 *.jar
 *.war
 *.class
@@ -21,4 +21,4 @@ Thumbs.db
 *.log
 
 # Environment files
-.env
+frontend/.env
