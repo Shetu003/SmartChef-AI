@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+  font-weight: 500;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .recipe-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@keyframes softFade {
+  0%, 100% {
+    background-color: #f3f4f6;
+  }
+  50% {
+    background-color: #e5e7eb;
+  }
+}
+
+.animated-soft-bg {
+  animation: softFade 10s ease-in-out infinite;
+}
